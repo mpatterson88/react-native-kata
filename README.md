@@ -1,48 +1,15 @@
-# Objective of Kata
+# Steps to Complete Kata
 
-Get familiar with react-native tooling and development experience.
+## Machine Setup
 
-## Features
+* Install nvm to manage node versions: https://github.com/creationix/nvm
+* Install current version of nodejs: `nvm install node`
+* Update npm to the most recent version: `npm i -g npm`
+* Install yarn: `brew install yarn --without-node`
+* Install react-native-cli: `npm install -g react-native-cli`
+* Install create-react-native-app: `npm install -g create-react-native-app`
+* Create project: `create-react-native-app top-notch-recipes`
 
-### Display List of Recipes
-
-Given I have recipe 'Biscuits and Gravy'  
-And I have recipe 'Tacos'  
-When I open the 'Top Notch Recipes'  
-Then I should see two recipes  
-And I should see the average rating of each recipe
-
-### Display Recipe Detail
-
-Given I have recipe 'Biscuits and Gravy'  
-When I view 'Biscuits and Gravy'  
-Then I should see ingredients for 'Biscuits and Gravy'  
-And I should see the average rating for the recipe
-
-## Api Definition
-
-The recipes should be retrieved using the api definition found [here](./swagger.json)
-
-## Expectations
-
-* Setup a new react-native application using `create-react-native-app`. 
-* Create unit tests using Jest
-* Create Acceptance Tests using Detox
-* Run unit tests using yarn
-* Run Acceptance Tests using yarn
-* Use native components in react-native
-
-## Tooling
-
-* [Nodejs](https://nodejs.org/en/)
-  * JavaScript runtime
-* [Yarn](https://yarnpkg.com/en/)
-  * Facebook created package manager commonly used inplace of npm.
-* [React Native Cli](https://www.npmjs.com/package/react-native-cli)
-  * Used to run react-native apps
-* [Create React Native App](https://github.com/react-community/create-react-native-app)
-  * Used to create an initial react-native app.
-* [Detox](https://github.com/wix/detox)
-  * End-to-End tseting tool
-* [Jest](https://facebook.github.io/jest/)
-  * Unit testing framework
+Running `yarn start` in the project directory failed, so I had to run the following commands to get it working:
+* `sudo sysctl -w kern.maxfiles=5242880`
+* `sudo sysctl -w kern.maxfilesperproc=524288`
