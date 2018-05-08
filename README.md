@@ -13,3 +13,9 @@
 Running `yarn start` in the project directory failed, so I had to run the following commands to get it working:
 * `sudo sysctl -w kern.maxfiles=5242880`
 * `sudo sysctl -w kern.maxfilesperproc=524288`
+
+Running `yarn test` in the project directory failed, suffering from this issue: https://github.com/facebook/react-native/issues/19120
+
+Downgrading to the most recent LTS version of nodejs fixed the problem.
+* `nvm install --lts`
+* `nvm use lts/*`
