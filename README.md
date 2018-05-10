@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/mpatterson88/react-native-kata.svg?branch=master)](https://travis-ci.org/mpatterson88/react-native-kata)
+
+
 # Steps to Complete Kata
 
 ## Machine Setup
